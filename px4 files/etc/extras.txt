@@ -1,0 +1,17 @@
+#!nsh
+# additional streams for SYS_COMPANION
+mavlink stream -d /dev/ttyACM0 -s HIGHRES_IMU -r 150
+mavlink stream -d /dev/ttyACM0 -s ATTITUDE_QUATERNION -r 150
+mavlink stream -d /dev/ttyACM0 -s GPS_RAW_INT -r 20
+mavlink stream -d /dev/ttyACM0 -s ALTITUDE -r 30
+mavlink stream -d /dev/ttyACM0 -s OPTICAL_FLOW_RAD -r 30
+mavlink stream -d /dev/ttyACM0 -s LOCAL_POSITION_NED -r 30
+
+
+# additional streams for SYS_COMPANION
+mavlink stream -d /dev/ttyS2 -s ATTITUDE_QUATERNION -r 150
+mavlink stream -d /dev/ttyS2 -s GPS_RAW_INT -r 20
+mavlink stream -d /dev/ttyS2 -s ALTITUDE -r 30
+mavlink stream -d /dev/ttyS2 -s OPTICAL_FLOW_RAD -r 30
+mavlink stream -d /dev/ttyS2 -s LOCAL_POSITION_NED -r 30
+# ${MAVLINK_COMPANION_DEVICE}

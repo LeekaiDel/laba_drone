@@ -1,0 +1,4 @@
+# Reach+
+SATTRS{idVendor}=="3032", ATTRS{idProduct}=="0010", SYMLINK+="reach"
+#rplidar
+SUBSYSTEMS=="usb", KERNEL=="video*", ATTRS{idVendor}=="0ac8", ATTRS{idProduct}=="8801", SYMLINK+="elp_left"
